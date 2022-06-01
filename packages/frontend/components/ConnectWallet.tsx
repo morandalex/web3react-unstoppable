@@ -19,7 +19,7 @@ function ConnectWallet(): JSX.Element {
 
   const { onOpen, isOpen, onClose } = useDisclosure()
   async function handleUAuthConnect() {
-   console.log('ciao')
+   console.log('UAuthConnect')
     await activate(uauth)
   }
   return (
@@ -91,7 +91,7 @@ function ConnectWallet(): JSX.Element {
                   alt="Uauth"
                 />
               }
-              onClick={() => {console.log('uauth');
+              onClick={() => {
               handleUAuthConnect()
             }}
             >
